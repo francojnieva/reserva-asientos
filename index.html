@@ -6,6 +6,7 @@
     <meta name="author" content="Franco Javier Nieva">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- LINK CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- LINK FAVICON -->
@@ -14,9 +15,94 @@
     <title>Cine Atlas - Reservas</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer class="text-center">
+    <header>
+        <section class="d-flex align-items-center justify-content-center container pt-3">
+            <img class="rounded-circle logo" src="./img/logo-app.png" alt="Logo del cine">
+            <h1 class="text-white">Cine Atlas - Reservas</h1>
+        </section>
+    </header>
+    <main class="container">
+        <section class="pt-3 d-flex justify-content-center align-items-center">
+            <label>Películas:</label>
+            <select id="movie" class="movie-select ms-2 text-white rounded py-2">
+                <option value="300">Gladiador</option>
+                <option value="250">Batman: El caballero de la noche</option>
+                <option value="280">Interstellar</option>
+                <option value="200">Una mente brillante</option>
+                <option value="200">Talentos Ocultos</option>
+            </select>
+        </section>
+        <article id="movieInfo"></article>
+        <section class="d-flex justify-content-evenly pt-4">
+            <div class="d-flex align-items-center">
+                <div class="available"></div>
+                <small>Disponible</small>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="reserved me-2"></div>
+                <small>Reservado</small>
+            </div>
+        </section>
+        <section class="container py-4">
+            <div class="screen"></div>
+            <div class="row d-flex justify-content-center">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </section>
+        <section class="text-center">
+            <p>Haz seleccionado <span id="count">0</span> butacas</p>
+            <p>Precio total: <span id="price"></span>$ 0</p>
+            <button class="btn btn-danger"><i class="bi bi-check-circle-fill"></i> OK</button>
+        </section>
+    </main>
+    <footer class="text-center py-4">
         <small>Desarrollado por Franco Javier Nieva</small>
     </footer>
      <!-- BOOTSTRAP -->
